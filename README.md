@@ -9,6 +9,9 @@ The "local-storage-with-expiry" comes with a feature to expire data stored in th
 ```javascript
 var app_store = localStore("key_name");
 
+// Setting expiry time to 1 hour
+app_store.setExpiryTime(60*60*1000);
+
 app_store.set({
   test : test123
 });
