@@ -1,6 +1,10 @@
 var localStore = function(key) {
 	var retention_period = 60*60*1000; // 1 hour
-
+	
+	var setRetentionPeriod = function(timeInMs) {
+		retention_period = timeInMs;
+	};
+	
 	var get = function() {
 		var prevValue = JSON.parse(window.localStorage.getItem(key) || "{}");
 		if(Object.keys(prevValue).length > 0) {
@@ -32,6 +36,7 @@ var localStore = function(key) {
 	}
 
 	return {
+		setRetentionPeriod: setRetentionPeriod,
 		get: get,
 		set : set,
 		remove: remove
