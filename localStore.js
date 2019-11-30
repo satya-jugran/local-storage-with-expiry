@@ -1,7 +1,7 @@
 var localStore = function(key) {
 	var retention_period = 60*60*1000; // 1 hour
 	
-	var setRetentionPeriod = function(timeInMs) {
+	var setExpiryTime = function(timeInMs) {
 		retention_period = timeInMs;
 	};
 	
@@ -36,7 +36,7 @@ var localStore = function(key) {
 	}
 
 	return {
-		setRetentionPeriod: setRetentionPeriod,
+		setExpiryTime: setExpiryTime,
 		get: get,
 		set : set,
 		remove: remove
