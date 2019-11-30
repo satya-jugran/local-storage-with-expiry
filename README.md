@@ -13,8 +13,22 @@ var app_store = localStore("key_name");
 app_store.setExpiryTime(60*60*1000);
 
 app_store.set({
-  test : test123
+  test : 'test123'
 });
 
 var value = app_store.get();
+
+
+// Another store
+var app_store_2 = localStore("key_name_2");
+
+// Setting expiry time to 15 min
+app_store_2.setExpiryTime(15*60*1000);
+
+app_store_2.set({
+  test : 'another-test'
+});
+
+var value_2 = app_store.get();
+
 ```
