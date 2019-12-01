@@ -29,6 +29,6 @@ app_store_2.set({
   test : 'another-test'
 });
 
-var value_2 = app_store.get();
+var value_2 = app_store_2.get();
 
 ```
