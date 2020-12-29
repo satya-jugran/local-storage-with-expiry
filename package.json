@@ -1,0 +1,22 @@
+{
+  "name": "local-storage-with-expiry",
+  "version": "1.0.0",
+  "description": "A browser's Local storage that can expire like a Cookie.",
+  "main": "localStore.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satya-jugran/local-storage-with-expiry.git"
+  },
+  "keywords": [
+    "localstorage"
+  ],
+  "author": "Satya Jugran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/satya-jugran/local-storage-with-expiry/issues"
+  },
+  "homepage": "https://github.com/satya-jugran/local-storage-with-expiry#readme"
+}
